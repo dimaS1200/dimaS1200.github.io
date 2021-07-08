@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 750px;
+            align-items: center;
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            flex-wrap: wrap;
+            position: absolute;
+            top: 150px;
+        }
+        .part2{
+            top: 100px;
+        }
+        .m{
+            background-color: #0E53A7;
+            padding: 10px 50px 10px 20px;
+            border-radius: 15px 15px 0 15px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+            transform-origin: right;
+        }
+        .mas1{
+            width: 100px;
+            animation: text1 100s 1;
+        }
+        .mas2{
+            animation: text2 100s 1;
+        }
+        .mas3{
+            animation: text3 100s 1;
+        }
+        .mas4{
+            animation: text4 100s 1;
+        }
+        .mas5{
+            width: 25px;
+            animation: text5 100s 1;
+        }
+        .mas6{
+            animation: text6 100s 1;
+        }
+        .el{
+            margin-right: -25px;
+        }
+        @keyframes text1{
+            0%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            1%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+            13%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+            14%{
+                transform: translateY(-700px);
+            }
+            100%{
+                transform: translateY(-700px);
+            }
+        }
+        @keyframes text2{
+            0%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            2%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            3%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+            13.1%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+            14.1%{
+                transform: translateY(-700px);
+            }
+            100%{
+                transform: translateY(-700px);
+            }
+        }
+        @keyframes text3{
+            0%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            4%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            5%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+            13.2%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+            14.2%{
+                transform: translateY(-700px);
+            }
+            100%{
+                transform: translateY(-700px);
+            }
+        }
+        @keyframes text4{
+            0%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            6%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            7%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+            13.3%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+            14.3%{
+                transform: translateY(-700px);
+            }
+            100%{
+                transform: translateY(-700px);
+            }
+        }
+        @keyframes text5{
+            0%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            9%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            10%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+            13.4%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+            14.4%{
+                transform: translateY(-700px);
+            }
+            100%{
+                transform: translateY(-700px);
+            }
+        }
+        @keyframes text6{
+            0%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            11%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            12%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+            13.5%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+            14.5%{
+                transform: translateY(-700px);
+            }
+            100%{
+                transform: translateY(-700px);
+            }
+        }
+        p{
+            margin: 0;
+        }
+        
+        .img1{
+            position: absolute;
+            top: 900px;
+            animation: img1 100s 1;
+        }
+        @keyframes img1{
+            15%{
+                transform: translateY(0px);
+            }
+            16%{
+                transform: translateY(-600px);
+            }
+            31%{
+                transform: translateY(-600px);
+            }
+            32%{
+                transform: translateY(-1300px);
+            }
+            100%{
+                transform: translateY(-1300px);
+            }
+        }
+        .t1{
+            width: 300px;
+            text-align: justify;
+            position: absolute;
+            top: 150px;
+            opacity: 0;
+            animation: text7 100s 1;
+        }
+        @keyframes text7 {
+            16%{
+                opacity: 0;
+            }
+            17%{
+                opacity: 1;
+            }
+            32%{
+                opacity: 1;;
+            }
+            33%{
+                opacity: 0;
+            }
+        }
+        .wp{
+            position: absolute;
+            top: 900px;
+            width: 300px;
+            height: 300px;
+            background-image: url(img/QA8E1dvpMRc.jpg);
+            background-size: cover;
+            animation: img2 100s 1;
+        }
+        @keyframes img2 {
+            33%{
+                transform: translateY(0);
+            }
+            34%{
+                transform: translateY(-600px);
+            }
+            48%{
+                transform: translateY(-600px);
+            }
+            49%{
+                transform: translateY(-1300px);
+            }
+            100%{
+                transform: translateY(-1300px);
+            }
+        }
+        .t2{
+            width: 300px;
+            text-align: justify;
+            position: absolute;
+            top: 150px;
+            opacity: 0;
+            animation: text8 100s 1;
+        }
+        @keyframes text8{
+            34%{
+                opacity: 0;
+            }
+            35%{
+                opacity: 1;
+            }
+            49%{
+                opacity: 1;;
+            }
+            50%{
+                opacity: 0;
+            }
+        }
+        .img3{
+            width: 300px;
+            height: 300px;
+            background-image: url(img/trxy3w_QNWk.jpg);
+            background-size: cover;
+            position: absolute;
+            top: 900px;
+            animation: img3 100s 1;
+        }
+        
+        @keyframes img3 {
+            50%{
+                transform: translateY(0);
+            }
+            51%{
+                transform: translateY(-600px);
+            }
+            65%{
+                transform: translateY(-600px);
+            }
+            66%{
+                transform: translateY(-1300px);
+            }
+            100%{
+                transform: translateY(-1300px);
+            }
+        }
+        .t3{
+            width: 300px;
+            text-align: justify;
+            position: absolute;
+            top: 130px;
+            opacity: 0;
+            animation: text9 100s 1;
+        }
+        @keyframes text9{
+            51%{
+                opacity: 0;
+            }
+            52%{
+                opacity: 1;
+            }
+            66%{
+                opacity: 1;;
+            }
+            67%{
+                opacity: 0;
+            }
+        }
+        .img4{
+            width: 300px;
+            height: 300px;
+            background-image: url(img/126876464_404695033990289_7665193654698054516_n.jpg);
+            background-size: cover;
+            position: absolute;
+            top: 900px;
+            animation: img4 100s 1;
+        }
+        
+        @keyframes img4 {
+            67%{
+                transform: translateY(0);
+            }
+            68%{
+                transform: translateY(-600px);
+            }
+            86%{
+                transform: translateY(-600px);
+            }
+            87%{
+                transform: translateY(-1300px);
+            }
+            100%{
+                transform: translateY(-1300px);
+            }
+        }
+        .t4{
+            width: 300px;
+            text-align: justify;
+            position: absolute;
+            top: 80px;
+            opacity: 0;
+            animation: text10 100s 1;
+        }
+        @keyframes text10{
+            68%{
+                opacity: 0;
+            }
+            69%{
+                opacity: 1;
+            }
+            87%{
+                opacity: 1;;
+            }
+            88%{
+                opacity: 0;
+            }
+        }
+        .black{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            opacity: 1;
+            animation: bl 100s 1;
+        }
+        @keyframes bl {
+            0%{
+                opacity: 0;
+            }
+            88%{
+                opacity: 0;
+            }
+            89%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        html{
+            overflow: hidden;
+        }
+        .blackbtn{
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            width: 300px;
+            height: 100%;
+            animation: bl1 100s 1;
+        }
+        @keyframes bl1 {
+            0%{
+                transform: translateY(900px);
+            }
+            88%{
+                transform: translateY(900px)
+            }
+            89%{
+                transform: translateY(0px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        .mas7{
+            animation: text11 100s 1;
+        }
+        .mas8{
+            animation: text12 100s 1;
+        }
+        .mas9{
+            animation: text13 100s 1;
+        }
+        .mas10{
+            animation: text14 100s 1;
+        }
+        .mas11{
+            animation: text15 100s 1;
+        }
+        .mas12{
+            animation: text16 100s 1;
+        }
+        .mas13{
+            animation: text17 100s 1;
+        }
+        @keyframes text11{
+            0%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            1%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+            100%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+        }
+        @keyframes text12{
+            0%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            2%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            3%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+            100%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+        }
+        @keyframes text13{
+            0%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            4%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            5%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+            100%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+        }
+        @keyframes text14{
+            0%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            6%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            7%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+            100%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+        }
+        @keyframes text15{
+            0%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            8%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            9%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+            100%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+        }
+        @keyframes text16{
+            0%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            10%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            11%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+            100%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+        }
+        @keyframes text17{
+            0%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            12%{
+                transform: rotateZ(25deg);
+                opacity: 0;
+            }
+            13%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+            100%{
+                transform: rotateZ(0deg);
+                opacity: 1;
+            }
+        }
+        .part2{
+            display: none;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+       <div class="wrapper">   
+            <div class="mas1 m">
+                <p class="f">Доброе утро)</p>
+            </div>
+            <div class="mas2 m">
+                <p class="s">У тебя сегодня день рождения</p>
+            </div>
+            <div class="mas3 m">
+                <p class="t">Ты только представь</p>
+            </div>
+            <div class="mas4 m">
+                <p class="f">Всего 36 лет назад родилась ты</p>
+            </div>
+            <div class="mas5 m">
+                <p class="fi">36</p>
+            </div>
+            <div class="mas6 m">
+                <p class="s">И вот чего ты достигла за это время</p>
+            </div>
+        </div>
+        <img class="img1" src="img/Без названия.jpg" alt="">
+        <p class="t1">&nbsp;&nbsp;&nbsp;&nbsp;В твои 36 лет ты имеешь отличную работу.
+            На ней ты хорошо зарабатываешь. И самое главное, что ты, как бы то ни было, 
+            любишь свое дело. А это - удел не очень большого числа людей.</p>
+        <div class="wp"></div>
+        <p class="t2">&nbsp;&nbsp;&nbsp;&nbsp;В твои 36 лет ты живешь с человеком которого 
+            любишь. Да, конечно он может и не идеален, но раз он смог заслужить твою любовь, 
+            значит такое решение судьбы было более чем верным.</p>
+        <div class="img3"></div>
+        <p class="t3">&nbsp;&nbsp;&nbsp;&nbsp;В твои 36 ты имеешь, я надеюсь, двух замечательных мужичков). 
+            И здесь просто начинается какая-то магия. Ты в 36 лет, не только вырастила, 
+            но и воспитала две совершенно нормальные личности. В таком возрасте, как мне 
+            кажется, мало кто может похвастаться такими успехами.</p>
+        <div class="img4"></div>
+        <p class="t4">&nbsp;&nbsp;&nbsp;&nbsp;И наконец, ты в твои 36 лет имеешь за плечами просто огромное море опыта и не меньший багаж знаний.
+            И сейчас, в какой бы ситуации бы ты не оказалась, ты всегда можешь найти выход. 
+            Сделать красивый снимок, поддержать сына, сделать ремонт, оказать первую мед помощь,
+            собрать мебель, и это можно пречислять и перечислять. Люди такие как ты, как говорится, на вес золота.
+        </p>
+        <div class="black"></div>
+        <div class="blackbtn" id="btn"></div>
+
+        <div class="wrapper part2">
+            <div class="mas7 m">
+                <p class="se">Ну и вот</p>
+            </div>
+            <div class="mas8  m">
+                <p class="ei">Посмотри как много ты достигла</p>
+            </div>
+            <div class="mas9 m">
+                <p class="n">Это может и не верх мечтаний</p>
+            </div>
+            <div class="mas10 m">
+                <p class="ten">Но 36 лет это даже не половина жизни</p>
+            </div>
+            <div class="mas11 m">
+                <p class="el">Так что хочу от всего сердца поздравить тебя с днем рождения</p>
+            </div>
+            <div class="mas12 m">
+                <p class="tw">Дорогая мама!</p>
+            </div>
+            <div class="mas13 m">
+                <img src="img/30.png" alt="" class="sticker">
+            </div>
+        </div>
+    <script src="js/bd2.js"></script>
+</body>
+</html>
